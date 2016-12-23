@@ -1185,10 +1185,10 @@ double PanelInfo(int run, int panel, string option)
   vector<double> qdcSig2 =  {297, 92.38, 199.9, 150.1, 321.5, 149.5, 299.3, 387.1, 239.2, 212.6, 244.3, 178.9, 113,  129.6, 245.3, 312.3, 162.3, 154.5, 255.4, 184.5, 292.5, 288.8, 161, 228.7, 210, 176,  270.8, 194.4, 230.4, 261.8, 316, 230.8};
 
   if (option=="hitRateMean") return hitRateMean[panel];
-  if (option=="hitRateSigma") return hitRateSig[panel];
+  if (option=="hitRateSig") return hitRateSig[panel];
   if (option=="qdcMean" && run > 19091 && run < 4500000) return qdcMean2[panel];
   if (option=="qdcMean" && run < 19091 && run < 4500000) return qdcMean[panel];
-  if (option=="qdcSigma" && run > 19091 && run > 16797) return qdcSig2[panel];
-  if (option=="qdcSigma" && run > 19091 && run > 16797) return qdcSig[panel];
+  if (option=="qdcSig" && run > 19091 && run > 16797) return qdcSig2[panel];
+  if (option=="qdcSig" && run > 19091 && run > 16797) return qdcSig[panel];
   return 0;
 }
